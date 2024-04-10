@@ -4,7 +4,10 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 })
 basic.forever(function () {
     if (heart >= 2) {
-        for (let index = 0; index <= 3; index++) {
+        if (true) {
+            basic.showString("CPR active for 10 seconds")
+        }
+        for (let index = 0; index <= 8; index++) {
             basic.showLeds(`
                 . # . # .
                 # # # # #
@@ -12,10 +15,21 @@ basic.forever(function () {
                 . # # # .
                 . . # . .
                 `)
-            basic.pause(500)
+            music.playTone(494, music.beat(BeatFraction.Whole))
+            basic.pause(555)
             basic.clearScreen()
-            basic.pause(500)
+            basic.pause(555)
         }
+        basic.showLeds(`
+            . . . . .
+            . # . . .
+            # . # . #
+            . . . # .
+            . . . . .
+            `)
+        music.playMelody("E D G F B A C5 B ", 389)
+        basic.pause(1000)
+        basic.clearScreen()
         heart = 0
     }
 })
