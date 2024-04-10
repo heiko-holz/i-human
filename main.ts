@@ -18,7 +18,7 @@ basic.forever(function () {
             pause2 = 555 - elapsed
             basic.pause(pause2)
             time = input.runningTime()
-            basic.showIcon(IconNames.SmallHeart)
+            basic.clearScreen()
             elapsed = input.runningTime() - time
             pause2 = 555 - elapsed
             basic.pause(pause2)
