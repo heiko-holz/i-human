@@ -25,6 +25,7 @@ basic.forever(function () {
         }
         basic.showIcon(IconNames.StickFigure, 1000)
         music.playMelody("E D G F B A C5 B ", 389)
+        basic.pause(1000)
         basic.clearScreen()
         heart = 0
     }
