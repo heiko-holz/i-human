@@ -7,7 +7,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 })
 basic.forever(function () {
     if (heart >= 2) {
-        if (false) {
+        if (true) {
             basic.showString("CPR active for 10 seconds")
         }
         for (let index = 0; index < 9; index++) {
