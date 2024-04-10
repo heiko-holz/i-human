@@ -1,9 +1,9 @@
-let beat = 0
+let heart = 0
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    beat += 1
+    heart += 1
 })
 basic.forever(function () {
-    if (beat >= 2) {
+    if (heart >= 2) {
         for (let index = 0; index <= 3; index++) {
             basic.showLeds(`
                 . # . # .
@@ -16,6 +16,6 @@ basic.forever(function () {
             basic.clearScreen()
             basic.pause(500)
         }
-        beat = 0
+        heart = 0
     }
 })

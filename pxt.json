@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "v2": "*"
+        "v2": "*",
+        "I, Human": "github:heiko-holz/i-human#f6ed5d0a363a98fee12beced22e071bd91656a3a"
     },
     "files": [
         "main.blocks",
